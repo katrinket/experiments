@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+
+
+           //i am only run when someone calls getCart function perhaps on a click of a button...
+           function getCart(){
+
+               //using jquery to do a get request for cart json (or some other feed or webservice)
+               $.get( "cart.json", function( data ) {
+                   console.log(data)
+                   $( ".result" ).text( JSON.stringify(data) );
+                   //alert( "Load was performed." );
+               });
+
+           }
+
+            //this stuff isnt in function so runs straight away (as page loads)
+           //can create functions that wrap or "decorate" other functions for instance kdoglog will add a date when it logs to console
+           kdogLog('hello');
+           console.log('hello')
+
+    </script>
+</head>
+<body>
+
+<button  onclick="getCart()">Get cart data referencing a function defined in script tag</button>
+
+
+<div class="result"></div>
+
+<div class="fun-body">style from external file and is a class</div>
+<h1 class="fun-body">so many things can have this class even different types</h1>
+
+<div style="background-color: red">In line styled thing-normally bad!</div>
+
+
+<div onClick="multiply(7,9)">An external referenced function can have onclick on divs too calls multiply</div>
+
+
+
+
+
+<form class="crappy-form" action="http://localhost:8001/server.php">
+    First name:<br>
+    <input type="text" name="firstname" value="Mickey"><br>
+    Last name:<br>
+    <input type="text" name="lastname" value="Mouse"><br><br>
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>
+
