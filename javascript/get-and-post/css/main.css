@@ -2,9 +2,14 @@
     color: pink;
 }
 
+.fun-body:hover {
+    color: red;
+}
 
 .crappy-form{
-
     margin-top: 50px;
     background-color: grey;
+
 }
+
+

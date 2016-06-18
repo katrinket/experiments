@@ -8,6 +8,24 @@
   }, {
     "name": "LP 4K",
     "price": 890
+  },{
+    "name": "Sony PS6",
+    "price": 400
+  }, {
+    "name": "XBone 450",
+    "price": 50
+  }, {
+    "name": "Huwauieu phone",
+    "price": 6
+  },{
+    "name": "Macbook pro",
+    "price": 10
+  }, {
+    "name": "Sky Q box",
+    "price": 5640
+  }, {
+    "name": "Drone",
+    "price": 950
   }
 
   ]
