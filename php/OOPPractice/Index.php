@@ -4,7 +4,7 @@ require ('Bird.php');
 
 $bird = new Animal(False, 2);
 
-echo 'this site suxz ';
+echo 'blah blah blah';
 echo $bird->hunt();
 
 
