@@ -1,8 +1,10 @@
 var someGlobalVariable=0;
+
+
 function multiply(a,b){
 
     //make the result of function call = to some local variable (local means it only exists as this function runs glocal can be accessed everywhere)
-    var someLocalVariable = veryComplicatedMAthLibraryThatMightBeDoingInterestingThings(a,b);
+    var someLocalVariable = veryComplicatedMAthLibraryThatMightBeDoingInterestingThings(a,b, 10000);
 
     console.log('someLocalVariable',someLocalVariable)
 
@@ -11,9 +13,9 @@ function multiply(a,b){
 }
 
 
-function veryComplicatedMAthLibraryThatMightBeDoingInterestingThings(a,b){
+function veryComplicatedMAthLibraryThatMightBeDoingInterestingThings(parama1,b,c){
 
-    return a*b
+    return parama1*b*c
 }
 
 function kdogLog(stringToLog){
